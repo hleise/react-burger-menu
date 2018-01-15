@@ -1088,13 +1088,7 @@ var BurgerIcon = function (_Component) {
                             cursor: 'pointer'
                         };
                     if (this.props.customIcon) {
-                        var extraProps = {
-                                className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-icon'),
-                                style: _extends({
-                                    width: '100%',
-                                    height: '100%'
-                                }, this.props.styles.bmIcon)
-                            };
+                        var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-icon') };
                         icon = _react2['default'].cloneElement(this.props.customIcon, extraProps);
                     } else {
                         icon = _react2['default'].createElement('span', null, [
@@ -1296,13 +1290,7 @@ var CrossIcon = function (_Component) {
                             cursor: 'pointer'
                         };
                     if (this.props.customIcon) {
-                        var extraProps = {
-                                className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-cross'),
-                                style: _extends({
-                                    width: '100%',
-                                    height: '100%'
-                                }, this.props.styles.bmCross)
-                            };
+                        var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-cross') };
                         icon = _react2['default'].cloneElement(this.props.customIcon, extraProps);
                     } else {
                         icon = _react2['default'].createElement('span', {

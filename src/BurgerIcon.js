@@ -41,11 +41,7 @@ export default class BurgerIcon extends Component {
 
     if (this.props.customIcon) {
       let extraProps = {
-        className: classNames(this.props.customIcon.props.className, 'bm-icon'),
-        style: {
-          ...{ width: '100%', height: '100%' },
-          ...this.props.styles.bmIcon
-        }
+        className: classNames(this.props.customIcon.props.className, 'bm-icon')
       };
       icon = React.cloneElement(this.props.customIcon, extraProps);
     } else {

@@ -40,14 +40,7 @@ export default class CrossIcon extends Component {
 
     if (this.props.customIcon) {
       let extraProps = {
-        className: classNames(
-          this.props.customIcon.props.className,
-          'bm-cross'
-        ),
-        style: {
-          ...{ width: '100%', height: '100%' },
-          ...this.props.styles.bmCross
-        }
+        className: classNames(this.props.customIcon.props.className, 'bm-cross')
       };
       icon = React.cloneElement(this.props.customIcon, extraProps);
     } else {
