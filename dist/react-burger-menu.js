@@ -1074,16 +1074,6 @@ var BurgerIcon = function (_Component) {
                 value: function render() {
                     var _this = this;
                     var icon = undefined;
-                    var buttonStyle = {
-                            position: 'absolute',
-                            left: '20px',
-                            top: '20px',
-                            margin: 0,
-                            padding: 0,
-                            border: 'none',
-                            fontSize: 8,
-                            cursor: 'pointer'
-                        };
                     if (this.props.customIcon) {
                         var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-burger-bars') };
                         icon = _react2['default'].cloneElement(this.props.customIcon, extraProps);
@@ -1108,8 +1098,7 @@ var BurgerIcon = function (_Component) {
                         },
                         onMouseOut: function () {
                             return _this.setState({ hover: false });
-                        },
-                        style: _extends({ zIndex: 1000 }, buttonStyle)
+                        }
                     }, icon);
                 }
             }
@@ -1263,27 +1252,6 @@ var CrossIcon = function (_Component) {
                 value: function render() {
                     var _this = this;
                     var icon;
-                    var buttonWrapperStyle = {
-                            position: 'absolute',
-                            width: 24,
-                            height: 24,
-                            right: 8,
-                            top: 8
-                        };
-                    var buttonStyle = {
-                            position: 'absolute',
-                            left: 0,
-                            top: 0,
-                            width: '100%',
-                            height: '100%',
-                            margin: 0,
-                            padding: 0,
-                            border: 'none',
-                            textIndent: -9999,
-                            background: 'transparent',
-                            outline: 'none',
-                            cursor: 'pointer'
-                        };
                     if (this.props.customIcon) {
                         var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-cross') };
                         icon = _react2['default'].cloneElement(this.props.customIcon, extraProps);
@@ -1307,8 +1275,7 @@ var CrossIcon = function (_Component) {
                     }
                     return _react2['default'].createElement('div', {
                         className: ('bm-cross-button ' + this.props.className).trim(),
-                        onClick: this.props.onClick,
-                        style: _extends({}, buttonWrapperStyle, this.props.styles.bmCrossButton)
+                        onClick: this.props.onClick
                     }, icon);
                 }
             }

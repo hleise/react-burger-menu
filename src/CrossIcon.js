@@ -16,27 +16,6 @@ export default class CrossIcon extends Component {
 
   render() {
     var icon;
-    var buttonWrapperStyle = {
-      position: 'absolute',
-      width: 24,
-      height: 24,
-      right: 8,
-      top: 8
-    };
-    var buttonStyle = {
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      width: '100%',
-      height: '100%',
-      margin: 0,
-      padding: 0,
-      border: 'none',
-      textIndent: -9999,
-      background: 'transparent',
-      outline: 'none',
-      cursor: 'pointer'
-    };
 
     if (this.props.customIcon) {
       let extraProps = {
@@ -64,7 +43,6 @@ export default class CrossIcon extends Component {
       <div
         className={`bm-cross-button ${this.props.className}`.trim()}
         onClick={this.props.onClick}
-        style={{ ...buttonWrapperStyle, ...this.props.styles.bmCrossButton }}
       >
         {icon}
       </div>

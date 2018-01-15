@@ -25,16 +25,6 @@ export default class BurgerIcon extends Component {
 
   render() {
     let icon;
-    let buttonStyle = {
-      position: 'absolute',
-      left: '20px',
-      top: '20px',
-      margin: 0,
-      padding: 0,
-      border: 'none',
-      fontSize: 8,
-      cursor: 'pointer'
-    };
 
     if (this.props.customIcon) {
       let extraProps = {
@@ -67,7 +57,6 @@ export default class BurgerIcon extends Component {
         onClick={this.props.onClick}
         onMouseOver={() => this.setState({ hover: true })}
         onMouseOut={() => this.setState({ hover: false })}
-        style={{ ...{ zIndex: 1000 }, ...buttonStyle }}
       >
         {icon}
       </div>
