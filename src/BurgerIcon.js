@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 export default class BurgerIcon extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ export default class BurgerIcon extends Component {
 
     if (this.props.customIcon) {
       let extraProps = {
-        className: 'bm-icon',
+        className: classNames(this.props.customIcon.props.className, 'bm-icon'),
         style: {
           ...{ width: '100%', height: '100%' },
           ...this.props.styles.bmIcon

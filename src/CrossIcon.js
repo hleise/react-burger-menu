@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 export default class CrossIcon extends Component {
   getCrossStyle(type) {
@@ -39,7 +40,10 @@ export default class CrossIcon extends Component {
 
     if (this.props.customIcon) {
       let extraProps = {
-        className: 'bm-cross',
+        className: classNames(
+          this.props.customIcon.props.className,
+          'bm-cross'
+        ),
         style: {
           ...{ width: '100%', height: '100%' },
           ...this.props.styles.bmCross

@@ -1046,6 +1046,8 @@ var _react = typeof window !== 'undefined' ? window['React'] : typeof global !==
 var _react2 = _interopRequireDefault(_react);
 var _propTypes = require('prop-types');
 var _propTypes2 = _interopRequireDefault(_propTypes);
+var _classnames = require('classnames');
+var _classnames2 = _interopRequireDefault(_classnames);
 var BurgerIcon = function (_Component) {
         _inherits(BurgerIcon, _Component);
         function BurgerIcon(props) {
@@ -1087,7 +1089,7 @@ var BurgerIcon = function (_Component) {
                         };
                     if (this.props.customIcon) {
                         var extraProps = {
-                                className: 'bm-icon',
+                                className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-icon'),
                                 style: _extends({
                                     width: '100%',
                                     height: '100%'
@@ -1138,7 +1140,7 @@ BurgerIcon.defaultProps = {
 };
 module.exports = exports['default'];
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"prop-types":8}],11:[function(require,module,exports){
+},{"classnames":undefined,"prop-types":8}],11:[function(require,module,exports){
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 exports['default'] = {
@@ -1247,6 +1249,8 @@ var _react = typeof window !== 'undefined' ? window['React'] : typeof global !==
 var _react2 = _interopRequireDefault(_react);
 var _propTypes = require('prop-types');
 var _propTypes2 = _interopRequireDefault(_propTypes);
+var _classnames = require('classnames');
+var _classnames2 = _interopRequireDefault(_classnames);
 var CrossIcon = function (_Component) {
         _inherits(CrossIcon, _Component);
         function CrossIcon() {
@@ -1293,7 +1297,7 @@ var CrossIcon = function (_Component) {
                         };
                     if (this.props.customIcon) {
                         var extraProps = {
-                                className: 'bm-cross',
+                                className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-cross'),
                                 style: _extends({
                                     width: '100%',
                                     height: '100%'
@@ -1343,7 +1347,7 @@ CrossIcon.defaultProps = {
 };
 module.exports = exports['default'];
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"prop-types":8}],13:[function(require,module,exports){
+},{"classnames":undefined,"prop-types":8}],13:[function(require,module,exports){
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 var styles = {
