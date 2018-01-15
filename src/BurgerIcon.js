@@ -27,14 +27,11 @@ export default class BurgerIcon extends Component {
     let icon;
     let buttonStyle = {
       position: 'absolute',
-      left: 0,
-      top: 0,
-      width: '100%',
-      height: '100%',
+      left: '20px',
+      top: '20px',
       margin: 0,
       padding: 0,
       border: 'none',
-      opacity: 0,
       fontSize: 8,
       cursor: 'pointer'
     };
@@ -67,17 +64,12 @@ export default class BurgerIcon extends Component {
     return (
       <div
         className={`bm-burger-button ${this.props.className}`.trim()}
-        style={{ ...{ zIndex: 1000 }, ...this.props.styles.bmBurgerButton }}
+        onClick={this.props.onClick}
+        onMouseOver={() => this.setState({ hover: true })}
+        onMouseOut={() => this.setState({ hover: false })}
+        style={{ ...{ zIndex: 1000 }, ...buttonStyle }}
       >
         {icon}
-        <button
-          onClick={this.props.onClick}
-          onMouseOver={() => this.setState({ hover: true })}
-          onMouseOut={() => this.setState({ hover: false })}
-          style={buttonStyle}
-        >
-          Open Menu
-        </button>
       </div>
     );
   }

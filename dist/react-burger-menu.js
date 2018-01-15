@@ -1076,14 +1076,11 @@ var BurgerIcon = function (_Component) {
                     var icon = undefined;
                     var buttonStyle = {
                             position: 'absolute',
-                            left: 0,
-                            top: 0,
-                            width: '100%',
-                            height: '100%',
+                            left: '20px',
+                            top: '20px',
                             margin: 0,
                             padding: 0,
                             border: 'none',
-                            opacity: 0,
                             fontSize: 8,
                             cursor: 'pointer'
                         };
@@ -1105,8 +1102,6 @@ var BurgerIcon = function (_Component) {
                     }
                     return _react2['default'].createElement('div', {
                         className: ('bm-burger-button ' + this.props.className).trim(),
-                        style: _extends({ zIndex: 1000 }, this.props.styles.bmBurgerButton)
-                    }, icon, _react2['default'].createElement('button', {
                         onClick: this.props.onClick,
                         onMouseOver: function () {
                             return _this.setState({ hover: true });
@@ -1114,8 +1109,8 @@ var BurgerIcon = function (_Component) {
                         onMouseOut: function () {
                             return _this.setState({ hover: false });
                         },
-                        style: buttonStyle
-                    }, 'Open Menu'));
+                        style: _extends({ zIndex: 1000 }, buttonStyle)
+                    }, icon);
                 }
             }
         ]);
