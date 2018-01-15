@@ -1307,11 +1307,9 @@ var CrossIcon = function (_Component) {
                     }
                     return _react2['default'].createElement('div', {
                         className: ('bm-cross-button ' + this.props.className).trim(),
-                        style: _extends({}, buttonWrapperStyle, this.props.styles.bmCrossButton)
-                    }, icon, _react2['default'].createElement('button', {
                         onClick: this.props.onClick,
-                        style: buttonStyle
-                    }, 'Close Menu'));
+                        style: _extends({}, buttonWrapperStyle, this.props.styles.bmCrossButton)
+                    }, icon);
                 }
             }
         ]);

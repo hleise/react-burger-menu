@@ -63,12 +63,10 @@ export default class CrossIcon extends Component {
     return (
       <div
         className={`bm-cross-button ${this.props.className}`.trim()}
+        onClick={this.props.onClick}
         style={{ ...buttonWrapperStyle, ...this.props.styles.bmCrossButton }}
       >
         {icon}
-        <button onClick={this.props.onClick} style={buttonStyle}>
-          Close Menu
-        </button>
       </div>
     );
   }
