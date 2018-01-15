@@ -1088,7 +1088,7 @@ var BurgerIcon = function (_Component) {
                             cursor: 'pointer'
                         };
                     if (this.props.customIcon) {
-                        var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-icon') };
+                        var extraProps = { className: (0, _classnames2['default'])(this.props.customIcon.props.className, 'bm-burger-bars') };
                         icon = _react2['default'].cloneElement(this.props.customIcon, extraProps);
                     } else {
                         icon = _react2['default'].createElement('span', null, [
